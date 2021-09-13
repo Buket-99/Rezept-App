@@ -24,6 +24,6 @@ data class DetailRecipe(val id: Int, val name: String, val thumbnail_url: String
 
 data class Instruction(val display_text: String)
 
-data class Section(val name: String, val components: List<Component>)
+data class Section(val name: String?, val components: List<Component>)
 
 data class Component(val raw_text: String)
